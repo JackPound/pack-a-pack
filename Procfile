@@ -1,1 +1,1 @@
-web: gunicorn pack-a-pack.wsgi
+web: gunicorn pack_a_pack.wsgi
