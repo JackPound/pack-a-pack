@@ -1,0 +1,145 @@
+body {
+	background-image: url('/static/mtn.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-size: 100% 100%;*/
+	height: 100%;
+	font-family: 'Muli', sans-serif;
+}
+html {
+	height: 100%;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding-bottom: 3px;
+	padding-top: 2px;
+	background-color: rgba(200,232,232,.7);
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	color:blue;
+}
+.navbar {
+	/*background-color: rgba(200,232,232,.3);*/
+	text-align: center;
+	width: 45%;
+	margin: auto;
+	font-size: 1.25em;
+}
+
+.navbar a{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.pageHead {
+	text-align: center;
+}
+.indexIntro {
+	text-align: center;
+}
+.indexBody {
+	width: 40%;
+	margin: auto;
+	background-color: rgba(200,232,232,.7);
+	border: 2px solid black;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+.loginForm {
+	text-align: center;
+}
+.signupInfo {
+	text-align: center;
+	padding-bottom: 5px;
+}
+.singleTrip {
+	width: 60%;
+	text-align: justify;
+	margin: auto;
+	background-color: lightgrey;
+}
+.singlePack {
+	display: inline-block;
+	width:45%; height:150px;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: rgba(200,232,232,.8);
+}
+.oneTrip {
+	text-align: center;
+	display: inline-block;
+	width:45%; height:100px;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: rgba(200,232,232,.8);
+}
+.desc {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.backpackForm {
+	background-color: lightgrey;
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+.itemsList {
+	/*display: inline-block;*/
+	width: 40%;
+	background-color: rgba(200,232,232,.8);
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 0 10px;
+	margin: 0 5%;
+}
+.packingScreen {
+	display: flex;
+}
+.packView {
+	text-align: center;
+}
+.helptext {
+	display: hidden;
+}
+.hSpace {
+	height: 34px;
+}
+.subP {
+	text-align: justify;
+	text-indent: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.oneItem {
+	display: flex;
+	border-bottom: 1px ridge black;
+}
+.itemName {
+	flex: 10%;
+}
+.itemSize {
+	flex: 10%;
+}
+.itemCount {
+	flex: 10%;
+}
+.add {
+	text-decoration: none;
+	color: green;
+}
+.remove {
+	text-decoration: none;
+	color: red;
+}
+.allTrips {
+	margin-left: 5%;
+}
+.allPacks {
+	margin-left: 5%;
+}
