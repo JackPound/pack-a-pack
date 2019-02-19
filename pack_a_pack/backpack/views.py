@@ -45,7 +45,9 @@ def seed(request):
 			n = thing[0]
 			s = thing[1]
 			new_item = Item.objects.create(name= n, size = s, category = 'misc')
-		build_inventory_pack(items)
+	
+	build_inventory_pack(items)
+	return HttpResponseRedirect('/')
 
 def signup(request):
 	if request.method == 'POST':
