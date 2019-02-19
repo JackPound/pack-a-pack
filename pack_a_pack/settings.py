@@ -75,12 +75,16 @@ WSGI_APPLICATION = 'pack_a_pack.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#     }
-# }
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dc37mj0agiati5',
+        'USER': 'knlibzuhbxumed',
+        'PASSWORD': '234f26a8ded8823a06290f45ff7f5fdfc34e047db1391a676ddbcddcf08594ad',
+        'HOST': 'ec2-54-243-128-95.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -120,7 +124,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
 django_heroku.settings(locals())
 
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
