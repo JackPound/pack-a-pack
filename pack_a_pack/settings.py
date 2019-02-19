@@ -78,10 +78,6 @@ WSGI_APPLICATION = 'pack_a_pack.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'backpack',
-        'USER': 'backpackuser',
-        'PASSWORD': 'backpackuser',
-        'HOST': 'localhost',
     }
 }
 
