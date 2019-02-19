@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 import django_heroku
-
+import dj_database_url
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -75,15 +75,16 @@ WSGI_APPLICATION = 'pack_a_pack.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'backpack',
-        'USER': 'backpackuser',
-        'PASSWORD': 'backpackuser',
-        'HOST': 'localhost',
-    }
-}
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'backpack',
+#         'USER': 'backpackuser',
+#         'PASSWORD': 'backpackuser',
+#         'HOST': 'localhost',
+#     }
+# }
 
 
 # Password validation
